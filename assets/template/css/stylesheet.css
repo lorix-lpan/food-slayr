@@ -49,3 +49,20 @@ button {
 	font-size:2em;
 	float:left;
 }
+
+.recipePreview {
+	margin-left: 25em;
+	height: 100 em;
+	font-size: 2 em;
+	float:center;
+}
+
+.recipeTitle {
+	text-align: right;
+	background-color: #E4E4A1;
+}
+
+.recipeImage {
+	height: 100 em;
+	float: center;
+}
