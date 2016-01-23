@@ -1,1 +1,1 @@
-var app = angular.module('foodSlayr', ['ngRoute']);
+var app = angular.module('foodSlayer', ['ngRoute']);
