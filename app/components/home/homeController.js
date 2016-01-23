@@ -1,6 +1,7 @@
 app.controller('homeController', ['$scope', '$fetchRecipe', '$photoTags', function ($scope, $fetchRecipe, $photoTags) {
+  var tags;
   $photoTags.getTags(undefined, function (data) {
-    console.log(data);
+    tags = data.data.results[0].result.tag.classes;
   });
   /*
   keywords = encodeURIComponent('chicken');
