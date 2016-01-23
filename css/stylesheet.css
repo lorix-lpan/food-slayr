@@ -1,25 +1,24 @@
 
 h1{
-color: grey;
-font-size: 5em;
-font-family: Arial;
-text-align:center;
-text-decoration: underline;
+	color: grey;
+	font-size: 5em;
+	font-family: Arial;
+	text-align:center;
+	text-decoration: underline;
 }
 
 img{
 	float:right;
-border: 1px solid #021a40;
+	border: 1px solid #021a40;
 }
 .container{
-width:60%;
-margin:auto;
-
+	width:60%;
+	margin:auto;
 }
 li{
-font-size:3em;
-text-align:left;
-font-style:sans-sherrif;
+	font-size:3em;
+	text-align:left;
+	font-style:sans-sherrif;
 }
 body{
 	background-image:url("bgimg.png");
@@ -28,7 +27,7 @@ p{
 	font-size:4em;
 }
 h2{
-font-size:5em;
-text-align:left;\
-font-style:sans-sherrif;
+	font-size:5em;
+	text-align:left;
+	font-style:sans-sherrif;
 }
