@@ -1,0 +1,26 @@
+{
+  "name": "food-slayr",
+  "version": "0.0.0",
+  "description": "An app that reads a picture of raw ingredients and returns a list of recipes",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lorix-lpan/food-slayr.git"
+  },
+  "keywords": [
+    "food",
+    "recipes"
+  ],
+  "author": "Lawrence Pan, Ming Zhao Zheng, Jaxon Lin, Yicheng Mu",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/lorix-lpan/food-slayr/issues"
+  },
+  "dependencies": {
+    "angular": "^1.4.9",
+    "angular-animate": "^1.4.9",
+    "angular-aria": "^1.4.9",
+    "angular-material": "^1.0.2",
+    "angular-messages": "^1.4.9",
+    "angular-route": "^1.4.9"
+  }
+}
