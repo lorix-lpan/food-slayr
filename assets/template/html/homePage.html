@@ -13,13 +13,13 @@
 		</div>
 		<div class = "upload">
 			<p>Upload your picture <strong>here</strong></p>
-		
-			<form name = "uploadImage">
+			<!-- enable file_uploads on php.ini -->
+			<form name = "uploadImage" method = "post" action = "upload.php>" enctype="multipart/form-data">
 			<input type="file" name="foodPicture"> <br>
 			</form>
 		</div>
 		<div>
-			<button form = "uploadImage" type="submit"><em><strong>GO!</strong></em></button>
+			<button form = "uploadImage"><em><strong>GO!</strong></em></button>
 		</div>
 
 
