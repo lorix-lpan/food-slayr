@@ -6,9 +6,9 @@ app.factory('$fetchRecipe', ['$http', function ($http) {
   return {
     // keyword is a encode URI string of keywords
     fetchJson: function (keywords, callback) {
-      $http.get(RECIPE_URL + '?' + 'key=' + API_KEY + '&q=' + keywords).
-        then(function (recipes, status) {
-          callback(recipes, status);
+      $http.jsonp(RECIPE_URL + '?' + 'key=' + API_KEY + '&q=' + keywords + '&callback=JSON_CALLBACK').
+        then(function (recipes) {
+          callback(recipes);
         });
     }
   };

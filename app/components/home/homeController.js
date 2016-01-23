@@ -1,6 +1,8 @@
 app.controller('homeController', ['$scope', '$fetchRecipe', function ($scope, $fetchRecipe) {
-  keywords = encodeURIComponent('chicken cheese');
+  /*
+  keywords = encodeURIComponent('chicken');
   $fetchRecipe.fetchJson(keywords, function (recipes) {
-    $scope.data = recipes;
+    console.log(recipes);
   });
+  */
 }]);
