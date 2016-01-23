@@ -9,4 +9,5 @@ Default Model: general-v1.1
 Default Language: en
 Authorization Grant Type
 client_credentials
-Access Tokens: to be generated
+Access Tokens:
+-generated jan 23 2016 16:46: ofbtuaAoWchh2tVW63x2ax2XxBqXMj

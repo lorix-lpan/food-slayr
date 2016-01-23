@@ -1,5 +1,5 @@
 
-h1{
+h1 {
 	color: grey;
 	font-size: 5em;
 	font-family: Arial;
@@ -7,27 +7,45 @@ h1{
 	text-decoration: underline;
 }
 
-img{
+.bigRecipeImage {
 	float:right;
 	border: 1px solid #021a40;
 }
-.container{
+
+.container {
 	width:60%;
 	margin:auto;
 }
-li{
+
+.upload {
+	float: left;
+	width: 50em;
+	height: 50em;
+	text-align: center;
+}
+
+li {
 	font-size:3em;
 	text-align:left;
 	font-style:sans-sherrif;
 }
-body{
-	background-image:url("bgimg.png");
+
+body {
+	background-image:url("../../img/bgimg.png");
 }
-p{
-	font-size:4em;
+
+p {
+	font-size:2em;
 }
-h2{
+
+h2 {
 	font-size:5em;
 	text-align:left;
 	font-style:sans-sherrif;
+}
+
+button {
+	padding:2em 5em;
+	font-size:2em;
+	float:left;
 }
