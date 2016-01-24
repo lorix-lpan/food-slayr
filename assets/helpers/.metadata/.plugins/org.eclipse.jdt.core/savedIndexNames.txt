@@ -1,0 +1,2 @@
+INDEX VERSION 1.127+C:\Users\Glowdie\Documents\GitHub\food-slayr\assets\helpers\.metadata\.plugins\org.eclipse.jdt.core
+1248665603.index
