@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="/">
     <link rel="stylesheet" type="text/css" href="node_modules/angular-material/angular-material.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/paper/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
   </head>
-  <body ng-app="foodSlayer">
+  <body class="bg-img" ng-app="foodSlayer">
+    <nav-bar></nav-bar>
     <ng-view></ng-view>
     <!-- angularjs libraries -->
     <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
@@ -21,5 +23,6 @@
     <script type="text/javascript" src="app/services/fetchRecipe.js"></script>
     <script type="text/javascript" src="app/services/photoTags.js"></script>
     <script type="text/javascript" src="app/services/filterTags.js"></script>
+    <script type="text/javascript" src="app/shared/navigation/nav-bar/navBar.js"></script>
   </body>
 </html>

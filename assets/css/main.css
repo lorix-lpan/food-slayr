@@ -12,9 +12,9 @@
     font-size: 5em;
 }
 .bg-img {
-    background: url("../../img/bgimg.png");
+    background: url("../img/bgimg.png");
 }
 
-ul>li {
+.social-media>li {
     vertical-align: bottom;
 }
