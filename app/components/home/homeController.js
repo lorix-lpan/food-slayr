@@ -10,6 +10,7 @@ app.controller('homeController', [
       $location.path(path);
     };
     $scope.upload = function (file) {
+      $scope.failed = true;
       $photoTags.getTags(file, function (data) {
         var filtered = filterTags.filterArray(data.data.results[0].result.tag.classes);
         $scope.foods = filtered.foods;

@@ -150,7 +150,10 @@ app.factory('filterTags', function () {
     'rabbit',
     'steak',
     'veal',
-    'duck'
+    'duck',
+    'fish',
+    'rice',
+    'spaghetti'
   ];
   return {
     filterArray: function (oldArray) {
