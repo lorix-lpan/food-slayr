@@ -25,3 +25,11 @@ p {
 .recipeIngredients {
 	font-size:2em;
 }
+
+.big-font {
+    font-size: 3em;
+}
+.vertical-center {
+    margin-top: 30px;
+}
+
