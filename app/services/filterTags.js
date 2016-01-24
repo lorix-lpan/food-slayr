@@ -1,5 +1,5 @@
 app.factory('filterTags', function () {
-  var foodlist = [
+  var foodItems = [
     'apple',
     'avocado',
     'banana',

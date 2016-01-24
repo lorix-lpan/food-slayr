@@ -1,4 +1,4 @@
-app.factory('$photoTags', ['$http', function ($http) {
+app.factory('$photoTags', ['Upload', function (Upload) {
 
   var API_KEY = 'ofbtuaAoWchh2tVW63x2ax2XxBqXMj';
   var AUTH = {
@@ -6,14 +6,13 @@ app.factory('$photoTags', ['$http', function ($http) {
   };
 
   return {
-    getTags: function (imgUrl, callback) {
-      imgUrl = typeof imgUrl === 'undefined' ? 'http://www.clarifai.com/img/metro-north.jpg' : imgUrl;
-      $http({
+    getTags: function (file, callback) {
+      Upload.upload({
         method: 'POST',
         url: 'https://api.clarifai.com/v1/tag/', 
         headers: AUTH,
         data: {
-          url: imgUrl
+          encoded_data: file
         }
       }).then(function (data) {
         callback(data);
