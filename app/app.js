@@ -1,1 +1,1 @@
-var app = angular.module('foodSlayer', ['ngRoute']);
+var app = angular.module('foodSlayer', ['ngRoute', 'ngFileUpload']);
