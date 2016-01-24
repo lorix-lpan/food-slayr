@@ -18,3 +18,10 @@
 .social-media>li {
     vertical-align: bottom;
 }
+p {
+	font-size:2em;
+}
+
+.recipeIngredients {
+	font-size:2em;
+}
