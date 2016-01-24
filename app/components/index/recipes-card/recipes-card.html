@@ -2,5 +2,6 @@
   <div class="media-body">
     <h5 class="media-heading">{{ recipe.recipeName }}</h5>
     <img class="media-object" ng-src="{{ recipe.imageUrlsBySize['90'] }}">
+    <button class="btn btn-info btn-lg" ng-click="moreInfo(recipe)">More Info</button>
   </div>
 </div>

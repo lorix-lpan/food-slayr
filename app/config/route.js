@@ -8,6 +8,10 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
       templateUrl: 'app/components/index/indexView.html',
       controller: 'indexController'
     }).
+    when('/details', {
+      templateUrl: 'app/components/details/detailsView.html',
+      controller: 'detailsController'
+    }).
     when('/about', {
       templateUrl: 'app/components/about/aboutView.html',
       controller: 'aboutController'
