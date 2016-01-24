@@ -1,6 +1,6 @@
 app.factory('$photoTags', ['Upload', function (Upload) {
 
-  var API_KEY = 'ofbtuaAoWchh2tVW63x2ax2XxBqXMj';
+  var API_KEY = 'Y4objAnSIR3gqZdfyeqA8DgM5oqh0R';
   var AUTH = {
     Authorization: 'Bearer' + ' ' + API_KEY
   };

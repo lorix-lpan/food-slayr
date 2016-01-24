@@ -14,7 +14,7 @@ app.controller('homeController', [
         var filtered = filterTags.filterArray(data.data.results[0].result.tag.classes);
         $scope.foods = filtered.foods;
         $fetchRecipe.fetchJson(filtered.keys, function (recipes) {
-          $rootScope.recipes = recipes.data.matches[0].recipeName;
+          $rootScope.recipes = recipes.data.matches;
         });
       });
     };
