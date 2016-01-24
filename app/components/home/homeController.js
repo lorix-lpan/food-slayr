@@ -1,12 +1,21 @@
-app.controller('homeController', ['$scope', '$fetchRecipe', '$photoTags', 'filterTags'
-               function ($scope, $fetchRecipe, $photoTags, filterTags) {
-  var recipes;
-  $scope.upload = function (file) {
-    $photoTags.getTags(file, function (data) {
-      var tags = filterTags.filterArray(data.data.results[0].result.tag.classes);
-      $fetchRecipe.fetchJson(tags, function (recipes) {
-        recipes = recipes.data.matches[0].recipeName;
+app.controller('homeController', [
+  '$scope',
+  '$rootScope',
+  '$location',
+  '$fetchRecipe',
+  '$photoTags',
+  'filterTags',
+  function ($scope, $rootScope, $location, $fetchRecipe, $photoTags, filterTags) {
+    $scope.gotoPage = function (path) {
+      $location.path(path);
+    };
+    $scope.upload = function (file) {
+      $photoTags.getTags(file, function (data) {
+        var filtered = filterTags.filterArray(data.data.results[0].result.tag.classes);
+        $scope.foods = filtered.foods;
+        $fetchRecipe.fetchJson(filtered.keys, function (recipes) {
+          $rootScope.recipes = recipes.data.matches[0].recipeName;
+        });
       });
-    });
-  };
+    };
 }]);

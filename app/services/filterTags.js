@@ -154,7 +154,8 @@ app.factory('filterTags', function () {
   ];
   return {
     filterArray: function (oldArray) {
-      var searchKeys = "";
+      var filteredList = {};
+      filteredList.keys = "";
       var tags = oldArray.filter(function (file) {
         var token;
         foodItems.forEach(function (item) {
@@ -163,12 +164,13 @@ app.factory('filterTags', function () {
         });
         return file === token;
       });
+      filteredList.foods = tags;
       tags.forEach(function (file, index) {
-        searchKeys += file.toString();
+        filteredList.keys += file.toString();
         if (index !== tags.length-1)
-          searchKeys += '+';
+          filteredList.keys += '+';
       });
-      return searchKeys;
+      return filteredList;
     }
   };
 });

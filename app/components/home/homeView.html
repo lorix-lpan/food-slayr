@@ -1,12 +1,20 @@
 <div class="container">
   <div class="jumbotron">
     <div class="row ">
-      <h2 class="text-center col-md-12">One picture, <em>thousands</em> of recipes</h1><!--TODO: SLOGAN GOES HERE-->
+      <h2 class="text-center col-md-12">One picture, <em>thousands</em> of recipes</h1>
     </div>
     <div class="center ">
       <button class="btn btn-success btn-lg btn-bigger" ngf-select="upload($file)">
         <div class="big-text">UPLOAD</div>
       </button>
+    </div>
+  </div>
+  <div class="row" ng-if="foods.length">
+    <div class="col-md-12 text-center">
+      <p style="font-size:2.5em">Ingredients detected: <span ng-repeat="food in foods">{{ food }} </span></p>
+    </div>
+    <div class="col-md-12 text-center">
+      <button class="btn btn-info btn-lg" ng-click="gotoPage('/index')">See Available Recipes</button>
     </div>
   </div>
 </div>
