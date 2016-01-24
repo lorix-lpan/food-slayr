@@ -30,6 +30,7 @@ public class FoodScanner {
 		StringBuilder lowerCaseFoodArray = new StringBuilder("");
 		while (!(foodListArray.hasNext("end"))) {
 			lowerCaseFoodArray.append(foodListArray.nextLine());
+			lowerCaseFoodArray.append(System.getProperty("line.separator"));
 		}
 		String lwcArray = lowerCaseFoodArray.toString();
 		lwcArray = lwcArray.toLowerCase();
